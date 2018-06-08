@@ -1,0 +1,398 @@
+@import "variables";
+@import "normalize";
+@import "mixins";
+
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+}
+
+.container {
+  margin: $margin;
+  width: $width;
+  max-width: $max-width;
+  padding: $padding;
+}
+/*header stylization*/
+.header {
+  background-color: $yellow;
+  &__container {
+    @extend .container;
+    padding-top: 50px;
+    @include tablet-portrait {
+      padding-top: 30px;
+    }
+    @include phone {
+      padding-top: 20px;
+    }
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include tablet-portrait {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+.menu {
+  &__items {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 363px;
+    @include tablet-portrait {
+      width: 400px;
+    }
+    @include phone {
+      width: 100%;
+    }
+  }
+  &__link {
+    @include phone {
+      display: none;
+    }
+  }
+}
+.property {
+  &__link {
+    color: $black;
+    font-weight: 700;
+    font-size: 22px;
+    text-decoration: none;
+  }
+}
+/*promo stylization (block with ipad)*/
+.promo {
+  background-color: $yellow;
+  &__container {
+    margin-top: -1px;
+    @extend .container;
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 103px;
+    @include tablet-portrait {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    @include phone {
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.inspiration {
+  padding-top: 23px;
+  width: 400px;
+  &__title {
+    font-size: 32px;
+    font-weight: 700;
+    @include tablet-portrait {
+      text-align: center;
+    }
+    @include phone {
+      font-size: 24px;
+    }
+  }
+  &__tagline {
+    font-size: 20px;
+    color: $grey;
+    font-weight: 390;
+    margin-top: -6px;
+  }
+  &__description {
+    padding-top: 5px;
+    color: $grey;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+  @include tablet-portrait {
+    width: auto;
+    text-align: center;
+    padding-top: 15px;
+  }
+  @include phone {
+    width: auto;
+    text-align: center;
+    padding-top: 10px;
+  }
+}
+.web-versions {
+  margin-top: 42px;
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+  &__link {
+    display: inline-block;
+  }
+  @include tablet-portrait {
+    margin: $margin;
+  }
+  @include phone {
+    margin: $margin;
+  }
+}
+
+.cover {
+  position: relative;
+  margin-right: 50px;
+  margin-top: -15px;
+  @include tablet-portrait {
+    display: none;
+  }
+  @include phone {
+    display: none;
+  }
+  &__thumbnail {
+    position: absolute;
+    top: 41%;
+    right: 26%;
+  }
+}
+/* block with css-grid*/
+.features {
+  background-color: #fff;
+  &__container {
+    @extend .container;
+    padding-top: 86px;
+    padding-bottom: 78px;
+    @include tablet-portrait {
+      padding-top: 50px;
+    }
+    @include phone {
+      padding-top: 40px;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 33px;
+    color: $black;
+    text-align: center;
+    @include phone {
+      font-size: 24px;
+    }
+  }
+  &__subtitle {
+    margin-top: -17px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 300;
+  }
+  &__content {
+    max-width: 940px;
+    padding-top: 66px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    grid-column-gap: 20px;
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    @include phone {
+      padding-top: 40px;
+    }
+  }
+}
+
+/* stylization inside each grid cell*/
+.feature {
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    max-width: 293px;
+    margin-bottom: 91px;
+    line-height: 19px;
+  }
+  &__cover {
+    float: left;
+    margin-right: 25px;
+  }
+  &__cathegory {
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 12px;
+    @include phone {
+      font-size: 18px;
+    }
+  }
+  &__body {
+    color: #898989;
+    font-weight: 300;
+    font-size: 16px;
+    padding-left: 66px;
+  }
+}
+/* footer stylization*/
+.footer {
+  background-color: $black;
+  &__container {
+    @extend .container;
+    padding-top: 60px;
+    @include tablet-portrait {
+      padding-top: 50px;
+    }
+    @include phone {
+      padding-top: 40px;
+    }
+  }
+  &__title {
+    color: $yellow;
+    font-weight: 700;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 12px;
+    @include phone {
+      font-size: 24px;
+    }
+  }
+  &__body {
+    font-weight: 300;
+    font-size: 20px;
+    color: #898989;
+    text-align: center;
+    @include phone {
+      font-size: 15px;
+    }
+  }
+  &__feedback {
+    padding-top: 44px;
+    width: 748px;
+    display: flex;
+    justify-content: space-between;
+    margin: $margin;
+    @include tablet-landscape {
+      width: auto;
+      max-width: 748px;
+    }
+    @include tablet-portrait {
+      width: auto;
+      max-width: 540px;
+    }
+    @include phone {
+      width: auto;
+    }
+  }
+  &__additions {
+    padding-top: 130px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__developer {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    @include tablet-portrait {
+      font-size: 14px;
+    }
+    @include phone {
+      display: none;
+    }
+  }
+  &__info {
+    list-style-type: none;
+    padding-left: 0;
+  }
+}
+/* block input with button*/
+.field {
+  &__input {
+    width: 578px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid transparent;
+    @include tablet-portrait {
+      padding: 10px 10px;
+      max-width: 350px;
+      width: 100%;
+    }
+    @include phone {
+      margin-right: 5px;
+      width: 100%;
+      padding: 8px 8px;
+    }
+  }
+}
+.button {
+  display: inline-block;
+  margin-right: 21px;
+  width: 125px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  color: $black;
+  background-color: $yellow;
+  padding: 15px 25px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  @include tablet-landscape {
+    margin-right: 0;
+  }
+  @include tablet-portrait {
+    padding: 10px 10px;
+    width: auto;
+    max-width: 125px;
+    margin-right: 0;
+  }
+  @include phone {
+    padding: 8px 8px;
+    font-size: 10px;
+    margin-right: 0;
+    width: auto;
+  }
+}
+/* footer icons*/
+.content {
+  padding-top: 79px;
+  width: 280px;
+  margin: $margin;
+  &__items {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+  &__link {
+    display: inline-block;
+  }
+  @include phone {
+    width: auto;
+    max-width: 280px;
+  }
+}
+/* footer bottom links*/
+.group {
+  margin-top: 0;
+  &__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    @include tablet-portrait {
+      font-size: 14px;
+    }
+    @include phone {
+      font-size: 13px;
+    }
+  }
+}

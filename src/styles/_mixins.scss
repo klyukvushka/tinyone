@@ -1,0 +1,27 @@
+@mixin phone {
+	@media screen and (max-width: $phone){
+		@content;
+	}
+}
+@mixin tablet-portrait {
+	@media screen and (max-width: $tablet-portrait){
+		@content;
+	}
+}
+@mixin tablet-landscape {
+	@media screen and (max-width: $tablet-landscape){
+		@content;
+	}
+}
+@mixin desktop {
+	@media screen and (min-width: $desktop){
+		@content;
+	}
+}
+
+
+@mixin grid {
+	display: -ms-grid;
+	display: grid;
+
+}

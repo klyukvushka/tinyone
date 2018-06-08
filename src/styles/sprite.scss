@@ -1,0 +1,266 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$android-name: 'android';
+$android-x: 0px;
+$android-y: 130px;
+$android-offset-x: 0px;
+$android-offset-y: -130px;
+$android-width: 33px;
+$android-height: 39px;
+$android-total-width: 184px;
+$android-total-height: 169px;
+$android-image: 'sprite.png';
+$android: (0px, 130px, 0px, -130px, 33px, 39px, 184px, 169px, 'sprite.png', 'android', );
+$apple-name: 'apple';
+$apple-x: 148px;
+$apple-y: 76px;
+$apple-offset-x: -148px;
+$apple-offset-y: -76px;
+$apple-width: 33px;
+$apple-height: 39px;
+$apple-total-width: 184px;
+$apple-total-height: 169px;
+$apple-image: 'sprite.png';
+$apple: (148px, 76px, -148px, -76px, 33px, 39px, 184px, 169px, 'sprite.png', 'apple', );
+$facebook-ico-name: 'facebook-ico';
+$facebook-ico-x: 73px;
+$facebook-ico-y: 88px;
+$facebook-ico-offset-x: -73px;
+$facebook-ico-offset-y: -88px;
+$facebook-ico-width: 36px;
+$facebook-ico-height: 36px;
+$facebook-ico-total-width: 184px;
+$facebook-ico-total-height: 169px;
+$facebook-ico-image: 'sprite.png';
+$facebook-ico: (73px, 88px, -73px, -88px, 36px, 36px, 184px, 169px, 'sprite.png', 'facebook-ico', );
+$google-ico-name: 'google-ico';
+$google-ico-x: 35px;
+$google-ico-y: 88px;
+$google-ico-offset-x: -35px;
+$google-ico-offset-y: -88px;
+$google-ico-width: 36px;
+$google-ico-height: 36px;
+$google-ico-total-width: 184px;
+$google-ico-total-height: 169px;
+$google-ico-image: 'sprite.png';
+$google-ico: (35px, 88px, -35px, -88px, 36px, 36px, 184px, 169px, 'sprite.png', 'google-ico', );
+$icon-download-name: 'icon-download';
+$icon-download-x: 107px;
+$icon-download-y: 42px;
+$icon-download-offset-x: -107px;
+$icon-download-offset-y: -42px;
+$icon-download-width: 36px;
+$icon-download-height: 43px;
+$icon-download-total-width: 184px;
+$icon-download-total-height: 169px;
+$icon-download-image: 'sprite.png';
+$icon-download: (107px, 42px, -107px, -42px, 36px, 43px, 184px, 169px, 'sprite.png', 'icon-download', );
+$icon-font-name: 'icon-font';
+$icon-font-x: 45px;
+$icon-font-y: 42px;
+$icon-font-offset-x: -45px;
+$icon-font-offset-y: -42px;
+$icon-font-width: 47px;
+$icon-font-height: 40px;
+$icon-font-total-width: 184px;
+$icon-font-total-height: 169px;
+$icon-font-image: 'sprite.png';
+$icon-font: (45px, 42px, -45px, -42px, 47px, 40px, 184px, 169px, 'sprite.png', 'icon-font', );
+$icon-mail-name: 'icon-mail';
+$icon-mail-x: 0px;
+$icon-mail-y: 0px;
+$icon-mail-offset-x: 0px;
+$icon-mail-offset-y: 0px;
+$icon-mail-width: 51px;
+$icon-mail-height: 40px;
+$icon-mail-total-width: 184px;
+$icon-mail-total-height: 169px;
+$icon-mail-image: 'sprite.png';
+$icon-mail: (0px, 0px, 0px, 0px, 51px, 40px, 184px, 169px, 'sprite.png', 'icon-mail', );
+$icon-phone-name: 'icon-phone';
+$icon-phone-x: 0px;
+$icon-phone-y: 88px;
+$icon-phone-offset-x: 0px;
+$icon-phone-offset-y: -88px;
+$icon-phone-width: 33px;
+$icon-phone-height: 40px;
+$icon-phone-total-width: 184px;
+$icon-phone-total-height: 169px;
+$icon-phone-image: 'sprite.png';
+$icon-phone: (0px, 88px, 0px, -88px, 33px, 40px, 184px, 169px, 'sprite.png', 'icon-phone', );
+$icon-psd-name: 'icon-psd';
+$icon-psd-x: 0px;
+$icon-psd-y: 42px;
+$icon-psd-offset-x: 0px;
+$icon-psd-offset-y: -42px;
+$icon-psd-width: 43px;
+$icon-psd-height: 44px;
+$icon-psd-total-width: 184px;
+$icon-psd-total-height: 169px;
+$icon-psd-image: 'sprite.png';
+$icon-psd: (0px, 42px, 0px, -42px, 43px, 44px, 184px, 169px, 'sprite.png', 'icon-psd', );
+$icon-web-name: 'icon-web';
+$icon-web-x: 53px;
+$icon-web-y: 0px;
+$icon-web-offset-x: -53px;
+$icon-web-offset-y: 0px;
+$icon-web-width: 52px;
+$icon-web-height: 38px;
+$icon-web-total-width: 184px;
+$icon-web-total-height: 169px;
+$icon-web-image: 'sprite.png';
+$icon-web: (53px, 0px, -53px, 0px, 52px, 38px, 184px, 169px, 'sprite.png', 'icon-web', );
+$pin-ico-name: 'pin-ico';
+$pin-ico-x: 148px;
+$pin-ico-y: 0px;
+$pin-ico-offset-x: -148px;
+$pin-ico-offset-y: 0px;
+$pin-ico-width: 36px;
+$pin-ico-height: 36px;
+$pin-ico-total-width: 184px;
+$pin-ico-total-height: 169px;
+$pin-ico-image: 'sprite.png';
+$pin-ico: (148px, 0px, -148px, 0px, 36px, 36px, 184px, 169px, 'sprite.png', 'pin-ico', );
+$twit-ico-name: 'twit-ico';
+$twit-ico-x: 148px;
+$twit-ico-y: 38px;
+$twit-ico-offset-x: -148px;
+$twit-ico-offset-y: -38px;
+$twit-ico-width: 36px;
+$twit-ico-height: 36px;
+$twit-ico-total-width: 184px;
+$twit-ico-total-height: 169px;
+$twit-ico-image: 'sprite.png';
+$twit-ico: (148px, 38px, -148px, -38px, 36px, 36px, 184px, 169px, 'sprite.png', 'twit-ico', );
+$windows-name: 'windows';
+$windows-x: 107px;
+$windows-y: 0px;
+$windows-offset-x: -107px;
+$windows-offset-y: 0px;
+$windows-width: 39px;
+$windows-height: 40px;
+$windows-total-width: 184px;
+$windows-total-height: 169px;
+$windows-image: 'sprite.png';
+$windows: (107px, 0px, -107px, 0px, 39px, 40px, 184px, 169px, 'sprite.png', 'windows', );
+$spritesheet-width: 184px;
+$spritesheet-height: 169px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($android, $apple, $facebook-ico, $google-ico, $icon-download, $icon-font, $icon-mail, $icon-phone, $icon-psd, $icon-web, $pin-ico, $twit-ico, $windows, );
+$spritesheet: (184px, 169px, 'sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(../images/sprite.png);
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
+
+
+.icon-android {
+  @include sprite($android);
+}
+.icon-apple{
+  @include sprite($apple);
+ }
+.icon-windows{
+  @include sprite($windows);
+ 
+}
+
+// other icons
+.icon-phone{
+  @include sprite($icon-phone)
+}
+.icon-psd{
+  @include sprite($icon-psd)
+}
+.icon-font{
+  @include sprite($icon-font)
+}
+.icon-web{
+  @include sprite($icon-web)
+}
+.icon-mail{
+  @include sprite($icon-mail)
+}
+.icon-download{
+  @include sprite($icon-download)
+}
+.icon-fk{
+  @include sprite($facebook-ico)
+}
+.icon-tw{
+  @include sprite($twit-ico)
+}
+.icon-g{
+  @include sprite($google-ico)
+}
+.icon-pin{
+  @include sprite($pin-ico)
+}
